@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --max-width: 1400px;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Navbar Style */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  height: 3.6rem;
+  transition: height 0.5s ease-in-out;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.logo img {
+  filter: invert(1);
+  width: 9rem;
+}
+.nav_heading {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.nav__item {
+  margin: 0px 10px;
+}
+
+.nav__link {
+  padding: 5px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.nav__link:hover {
+  border-bottom: 3px solid white;
+}
+
+.ham__burger {
+  display: none;
+}
+
+.line {
+  width: 1.5rem;
+  height: 2px;
+  background-color: white;
+  margin: 5px;
+}
+
+.nav-login,
+.home-link,
+.addnote-btn, .edit-note-btn, .contact-form-btn {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-login:hover,
+.home-link:hover,
+.addnote-btn:hover, .edit-note-btn:hover, .contact-form-btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Home Page Style */
+.home {
+  background-image: url("https://media.istockphoto.com/id/1483076935/photo/close-up-man-hand-writes-in-notebook.webp?b=1&s=170667a&w=0&k=20&c=rxxlAhmmcuskqXx50z7BCrmAtCD7iaxonPur3nUmv4U=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(80vh - 3.6rem);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-image: fill 0 linear-gradient(rgba(43, 41, 41, 0.2), #000);
+}
+
+.home-heading {
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0; /* Add this line to remove the default top margin */
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.home-heading h1 {
+  font-size: 44px;
+  margin-bottom: 0; /* Add this line to remove the default bottom margin */
+}
+
+.home-para {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.home-para p {
+  font-size: 18px;
+}
+
+/* Into Section Home */
+
+.intro-section {
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.intro-section-heading {
+  margin-bottom: 20px;
+}
+
+.intro-section-heading h1 {
+  font-size: 24px;
+  color: #333333;
+  margin: 0;
+}
+
+.intro-section-para {
+  margin-bottom: 20px;
+}
+
+.intro-section-para p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.5;
+}
+
+
+/* Notes note-Section  */
+
+.notes-section {
+  background-image: url("https://media.istockphoto.com/id/1487080799/photo/woman-at-home-reading-a-letter-in-the-mail.webp?b=1&s=170667a&w=0&k=20&c=q6SwrsdXGyDcFvh4hRrSgn4TpVumX6CfKgyCsi6nlEs=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  border-image: fill 0 linear-gradient(#0003, #000);
+}
+
+.notes-section-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: var(--max-width);
+}
+
+.notes-section-heading h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notes-section-para {
+  max-width: var(--max-width);
+  text-align: center;
+  max-width: 50rem;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.notes-section-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+  max-width: var(--max-width);
+}
+
+.notes-section-btn-container a {
+  filter: invert(1);
+}
+
+
+/* Login/Sign Up Page Style  */
+
+.userForm {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.userForm::before {
+  content: "";
+  position: absolute;
+  top: -49px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh + 49px);
+  z-index: -1;
+  background-image: url("../src/assets/loginForm.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-image: fill 0
+    linear-gradient(rgba(44, 43, 43, 0.6), rgba(44, 43, 43, 0.4), #292828);
+}
+
+.form-heading h1 {
+  display: inline-block;
+  color: white;
+  font-family: sans-serif;
+  border-bottom: 3px solid purple;
+  padding-bottom: 5px;
+  margin: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.box input {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  background: none;
+  width: 90vw;
+  border-bottom: 2px solid purple;
+  color: white;
+  transition: border-color 0.3s ease;
+  max-width: var(--max-width);
+}
+
+.box input:focus {
+  border-bottom-color: rgb(255, 255, 255);
+}
+
+.box input::placeholder {
+  color: white;
+}
+
+.buttons-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  color: white;
+  background: none;
+  border: none;
+  border-bottom: 2px solid purple;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: border-color 0.3s ease;
+}
+
+.btn:hover {
+  border-bottom-color: purple;
+  color: purple;
+}
+
+.userForm i {
+  color: white;
+  padding-right: 4px;
+}
+
+/* Add Note Style */
+.addnote, .edit-note-container, .contact-container{
+  background-image: url("https://source.unsplash.com/random/1600x900");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 3.6rem);
+  width: 100%;
+}
+
+
+.addnote-heading, .edit-note-heading, .contact-heading{
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: var(--max-width);
+}
+
+
+/* Add Note Form Style  */
+
+.addnote-form, .edit-note-form, .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.addnote-form-box, .edit-note-form-box, .contact-form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 1rem;
+  width: 90vw;
+}
+
+.addnote-form-box input,
+.addnote-form-box textarea, .edit-note-form-box input, .edit-note-form-box textarea, .contact-form-box input, .contact-form-box textarea {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 0.75rem;
+  transition: all 0.2s ease-in-out;
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.addnote-form-box input:focus,
+.addnote-form-box textarea:focus, .edit-note-form-box input:focus, .edit-note-form-box textarea:focus, .contact-form-box input:focus, .contact-form-box textarea:focus  {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.addnote-form-box textarea, .edit-note-form-box textarea, .contact-form-box textarea {
+  height: auto;
+  resize: none;
+}
+
+.addnote-btn-container, .edit-note-btn-container, .contact-form-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  margin-top: 1rem;
+}
+
+.addnote-btn, .edit-note-btn, .contact-form-btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+
+/* Fetch All Notes */
+.notes-heading {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  width: 100vw;
+}
+
+.notes-heading h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.notes-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: var(--max-width);
+  margin: auto;
+  position: relative;
+  gap: 1rem;
+ 
+}
+
+.note-item {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 40%;
+  transition: transform 0.3s ease-in-out;
+  height: fit-content;
+}
+
+.no-note-para {
+  height: calc(100vh - 3.6rem);
+  text-align: center;
+}
+
+.note-item:hover {
+  transform: translateY(-5px);
+}
+
+.note-item-heading {
+  margin-bottom: 10px;
+}
+
+.note-item-heading h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.note-item-description {
+  margin-bottom: 1rem;
+}
+
+.note-item-description p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.note-item-tag {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  margin-right: 1rem;
+}
+
+.note-item-date {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 16px;
+}
+
+.notes-item-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.notes-item-icon i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.notes-item-icon i:hover {
+  color: #007bff;
+}
+
+/* Footer Code  */
+.footer {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #000000;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+

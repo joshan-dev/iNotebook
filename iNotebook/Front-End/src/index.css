@@ -1,0 +1,128 @@
+/* Media Queries  */
+@media only screen and (max-width: 867px) {
+  .nav_heading {
+    position: absolute;
+    top: 14px;
+  }
+
+  .nav__list {
+    display: none;
+    margin-right: 0;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    top: 58px;
+    padding: 16px 0;
+  }
+
+  .nav__item {
+    margin: 10px 10px;
+  }
+
+  .ham__burger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 16px;
+  }
+
+  .nav_resp {
+    height: 14.5rem;
+  }
+
+  .nav-login-signup-container {
+    display: none;
+  }
+}
+
+.hide {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .home-heading h1 {
+    font-size: 36px;
+  }
+
+  .home-para p {
+    font-size: 16px;
+  }
+
+  .addnote-heading,
+  .edit-note-heading , .contact-heading{
+    font-size: 1.5rem;
+  }
+
+  .notes-section {
+    padding: 2rem;
+  }
+
+  .notes-section-heading h1 {
+    font-size: 2rem;
+  }
+
+  .notes-section-para {
+    font-size: 1rem;
+  }
+
+  .note-item {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .note-item-heading h2 {
+    font-size: 1.2rem;
+  }
+
+  .note-item-description p {
+    font-size: 0.9rem;
+  }
+
+  .note-item-tag {
+    font-size: 0.7rem;
+    padding: 3px 7px;
+  }
+
+  .notes-item-icon i {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 1rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-heading h1 {
+    font-size: 40px;
+  }
+
+  .home-para p {
+    font-size: 17px;
+  }
+
+  .addnote-heading,
+  .edit-note-heading , .contact-heading{
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-heading h1 {
+    font-size: 44px;
+  }
+
+  .home-para p {
+    font-size: 18px;
+  }
+
+  .addnote-heading,
+  .edit-note-heading , .contact-heading{
+    font-size: 2.5rem;
+  }
+}
